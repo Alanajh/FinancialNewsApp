@@ -1,0 +1,21 @@
+ <TouchableHighlight onPress={() => { this.setModalVisible(true);}}>
+          <Text style={styles.mock}
+		  >Financial News Modal</Text>
+        </TouchableHighlight>
+	
+
+<FlatList
+          
+data={this.state.data} 
+		  
+keyExtractor={(x, i) => i}
+		  
+renderItem={({ item }) =>		
+		
+	<Text>
+				
+		{item.name.first}
+			
+	</Text>
+		
+</FlatList>	
